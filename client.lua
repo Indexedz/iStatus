@@ -1,4 +1,4 @@
-local player = import '@Index/player'.localPlayer();
+local player = import '@Index/player';
 
 local function onPlayerLoaded()
     local status, state = player.get("status")

@@ -1,6 +1,5 @@
 local player   = import '@Index/player'
-local behavior = player.behavior()
-local player   = player.localPlayer()
+local behavior = import '@Index/behavior'
 local module   = {}
 
 function module.new(name, default, max)

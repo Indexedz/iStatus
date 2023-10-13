@@ -1,8 +1,6 @@
 local player              = import '@Index/player';
-local behavior            = player.behavior()
-local player              = player.localPlayer()
-
-local stamina, maxStamina = import '@status/status'.new('stamina', config.stamina.default, config.stamina.max)
+local behavior            = import '@Index/behavior';
+local stamina, maxStamina = import 'status'.new('stamina', config.stamina.default, config.stamina.max)
 
 local tick                = config.tick or 100
 

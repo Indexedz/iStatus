@@ -1,7 +1,6 @@
 local player          = import '@Index/player';
-local status          = import '@status/status';
-local behavior        = player.behavior()
-local player          = player.localPlayer()
+local behavior        = import '@Index/behavior';
+local status          = import 'status';
 local isDead          = player.getState("isDead");
 local death, maxDeath = status.new('death', 0, 100)
 local states          = {

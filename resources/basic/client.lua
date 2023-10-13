@@ -1,8 +1,7 @@
 local player   = import '@Index/player';
+local behavior = import '@Index/behavior';
 local array    = import '@Index/array';
-local status   = import '@status/status';
-local behavior = player.behavior()
-local player   = player.localPlayer()
+local status   = import 'status';
 local statuses = array.new();
 local death    = player.getState("death");
 

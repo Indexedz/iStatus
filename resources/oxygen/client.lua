@@ -1,7 +1,6 @@
 local player            = import '@Index/player';
-local behavior          = player.behavior()
-local player            = player.localPlayer()
-local oxygen, maxOxygen = import '@status/status'.new('oxygen', config.oxygen.default, config.oxygen.max)
+local behavior          = import '@Index/behavior';
+local oxygen, maxOxygen = import 'status'.new('oxygen', config.oxygen.default, config.oxygen.max)
 local tick              = config.tick
 
 local isUnderWater      = false;
